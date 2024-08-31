@@ -126,8 +126,8 @@ void CheckForSignal() {
         bc = bc && fma1 > sma1;
         sc = sc && fma1 < sma1;
 
-        bc = bc && Ask(s) > fma1 - 0.5 * diff;
-        sc = sc && Bid(s) < fma1 + 0.5 * diff;
+        bc = bc && Ask(s) > fma1 - 0.45 * diff;
+        sc = sc && Bid(s) < fma1 + 0.45 * diff;
 
         if (bc) {
             double in = Ask(s);
